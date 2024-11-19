@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main_container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="left_container">
+            <input type="hidden" name="access_key" value="1925866e-d245-4dc9-8c79-9c3f7ad8ac3f">
+            <h1>Contact Us</h1>
+            <hr>
+            <input class="input_s" type="name" name="name" id="" placeholder="Enter your name">
+            <input class="input_s" type="email" name="email" id="" placeholder="Enter your email">
+            <textarea name="message" id="" placeholder="Entre your message"></textarea>
+            <button class="submit">Submit👇</button>
+        </form>
+        <div class="right_container">
+            <!-- <img src="cool.png" alt=""> -->
+             <div id="observablehq-chart-e9b7a2b5"></div>
+        </div>
+    </div>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+import define from "https://api.observablehq.com/@d3/disjoint-force-directed-graph/2.js?v=4";
+new Runtime().module(define, name => {
+  if (name === "chart") return new Inspector(document.querySelector("#observablehq-chart-e9b7a2b5"));
+});
+</script>
+    
+</body>
+</html>
